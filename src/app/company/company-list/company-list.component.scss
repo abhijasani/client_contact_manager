@@ -1,0 +1,16 @@
+.company-list {
+    width: 100%;
+    margin-top: 20px;
+
+    mat-list-item {
+        span {
+            color: black;
+            width: 20%;
+            margin: 20px;
+        }
+
+        mat-icon {
+            color: black;
+        }
+    }
+}

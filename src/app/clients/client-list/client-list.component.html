@@ -1,0 +1,16 @@
+<mat-list class="client-list">
+  <mat-list-item *ngFor="let client of clients" role="list-item">
+    <span class="grid-item">{{ client.firstname }}</span>
+    <span class="grid-item">{{ client.lastname }}</span>
+    <span class="grid-item">{{ client.email }}</span>
+    <span class="grid-item">{{ client.companyName }}</span>
+    <span class="grid-item">{{ client.telephoneNumber }}</span>
+    <button
+      mat-icon-button
+      class="grid-item"
+      (click)="viewClientDetails(client)"
+    >
+      <mat-icon i18n>info</mat-icon>
+    </button>
+  </mat-list-item>
+</mat-list>

@@ -1,0 +1,23 @@
+<mat-toolbar>
+  <p i18n>{{ title }}</p>
+
+  <button mat-button i18n [matMenuTriggerFor]="clientmenu">Clients</button>
+  <mat-menu #clientmenu="matMenu">
+    <button i18n mat-menu-item (click)="goTo('clients/search')">
+      Client Search
+    </button>
+    <button i18n mat-menu-item (click)="goTo('clients/new')">
+      Add New Client
+    </button>
+  </mat-menu>
+  <button i18n mat-button [matMenuTriggerFor]="companymenu">Company</button>
+  <mat-menu #companymenu="matMenu">
+    <button i18n mat-menu-item (click)="goTo('company/search')">
+      Company Search
+    </button>
+    <button i18n mat-menu-item (click)="goTo('company/new')">
+      Add New Company
+    </button>
+  </mat-menu>
+  <button i18n mat-button (click)="goTo('about')">About</button>
+</mat-toolbar>
